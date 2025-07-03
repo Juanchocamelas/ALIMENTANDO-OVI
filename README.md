@@ -6,31 +6,24 @@
 
 ## 🧠 Características principales
 
-- ✅ Validación dinámica por tipo de comprobante (`NOTA CREDITO`, `RECIBO DE CAJA`, etc.)
-- 🧪 Evaluación cruzada de llaves de rechazo
-- 🧩 Construcción modular con funciones reutilizables y auxiliares
-- 🧹 Limpieza automática de datos inconsistentes
-- 🚀 Integración con otros módulos del sistema OVI
-- 💬 Estructura escalable para nuevas reglas de negocio
+- Uso de multiples buscarV en una sola funcion
+- Clasificacion de multiples condiciones, para diferentes tipos de agentes
+- Alimenta una base de datos, para su posterior validacion manual
+ 
 
 ---
 
-## 🗂️ Estructura de archivos
+## 🗂️ Estructura de archivos (ordenada)
 
 | Archivo                                 | Propósito                            |
-|----------------------------------------|--------------------------------------|
-| `menu.gs`                               | Control de interfaz                  |
-| `Cruce general.gs`                      | Módulo principal de alimentación     |
-| `Validaciones auxiliares.gs`           | Reglas por tipo y comprobante        |
-| `Variables reutilizables.gs`           | Identificadores compartidos          |
+|----------------------------------------|-----------------------------------------------------------|
+| `variables reutilizables`              | Variables globales
+| `menu.gs`                              | Control de interfaz                                       |
+| `Cruce general.gs`                     | Módulo de alimentación en hoja facturacion                |
+| `Alimentar validaciones rechazos`      | Modulo que aplica validaciones y alimenta la hoja rechazos|                                                      |
 | `Funciones reutilizables-Genericas.gs` | Utilidades y lógica de apoyo         |
 | `appsscript.json`                      | Configuración del proyecto           |
 
 ---
 
-## ⚙️ Cómo clonar y desplegar el proyecto
 
-```bash
-npm install -g @google/clasp
-clasp login
-clasp clone 1Q37kP5E1TiGxFhNSwwR4kaGmTKrbjINEoSK45b2bpfpM9HExFJ-hxOCy
