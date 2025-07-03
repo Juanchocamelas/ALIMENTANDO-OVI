@@ -1,0 +1,1 @@
+const hojaActiva = SpreadsheetApp.getActiveSpreadsheet(); 
