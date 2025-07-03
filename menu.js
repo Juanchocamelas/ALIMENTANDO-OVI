@@ -1,5 +1,5 @@
 function onOpen() {
-  var ui = SpreadsheetApp.getUi();
+  const ui = SpreadsheetApp.getUi();
    
   ui.createMenu("OVI")
   .addItem("1️⃣ Crear encabezados", "creacionColumnas")
@@ -18,8 +18,8 @@ function onOpen() {
 function EjecutarTodo () {
 
 
-     var ui = SpreadsheetApp.getUi();
-var respuesta = ui.alert(
+     const ui = SpreadsheetApp.getUi();
+const respuesta = ui.alert(
   "⚠️ Advertencia ⚠️",
   "Estimado usuario,\n\n" +
   "En este momento no se puede ejecutar el problema, por favor desista.\n\n" +
