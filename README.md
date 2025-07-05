@@ -25,7 +25,6 @@ El proposito de este proyecto, es realizar multiples cruces y validaciones, para
 | `Cruce general.gs`                     | Módulo de alimentación en hoja facturacion                |
 | `Alimentar validaciones rechazos`      | Modulo que aplica validaciones y alimenta la hoja rechazos|                                                      |
 | `Funciones reutilizables-Genericas.gs` | Utilidades y lógica de apoyo         |
-| `appsscript.json`                      | Configuración del proyecto           |
 ---
 
 ## 🛠️ Tecnologías utilizadas
